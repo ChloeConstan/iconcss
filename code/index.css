@@ -1,0 +1,68 @@
+
+
+body {
+    padding : 350px 0px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+#twitter {
+    color:#739add;
+    animation: twitterAnimation 2s ease-in infinite alternate;
+    animation-name: twitterAnimation;
+}
+
+#heart {
+    color:#c87ea9;
+}
+
+#message {
+    color:#b9b4d9;
+}
+
+#dollar {
+    color:#9ec992;
+    animation: dollarAnimation 1500ms ease-in forwards infinite alternate;
+}
+
+#letter {
+    color:#c47878;
+    animation: 1.5s ease-in infinite alternate;
+    animation-name: fa-fade, letterAnimation;
+   
+}
+
+i {
+    padding: 0px 15px;
+}
+
+@keyframes twitterAnimation {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(90deg) translateY(-300px);
+    }
+
+
+}
+@keyframes letterAnimation {
+    from {
+        transform: translateX(0px);
+        
+    }
+    to { transform: translateX(1000px);
+
+    }
+}
+
+@keyframes dollarAnimation {
+    from {
+        font-size: 0.1px;
+    }
+    to {
+        font-size:100px;
+    }
+   
+}
